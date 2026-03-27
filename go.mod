@@ -1,4 +1,4 @@
-module code_scene
+module github.com/roc-coding3818/code_scene
 
 go 1.21
 
@@ -6,10 +6,13 @@ require (
 	github.com/gin-gonic/gin v1.9.1
 	github.com/go-redis/redis/v8 v8.11.5
 	github.com/golang-jwt/jwt/v5 v5.2.0
+	github.com/roc-coding3818/code_scene/shared v0.0.0
 	golang.org/x/crypto v0.17.0
 	gopkg.in/yaml.v3 v3.0.1
 	gorm.io/gorm v1.30.0
 )
+
+replace github.com/roc-coding3818/code_scene/shared => ./shared
 
 require (
 	filippo.io/edwards25519 v1.1.0 // indirect

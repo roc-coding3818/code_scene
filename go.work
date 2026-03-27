@@ -1,0 +1,17 @@
+go 1.21
+
+use (
+	.
+	./shared
+	./modules/user
+	./modules/auth
+	./modules/order
+	./modules/payment
+	./modules/product
+	./modules/cache
+	./modules/file
+	./modules/mq
+	./modules/search
+	./modules/distributed
+	./modules/api-design
+)
