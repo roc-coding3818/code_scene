@@ -65,22 +65,24 @@ code_scene/
 │   ├── middleware/             # 中间件
 │   └── utils/                  # 工具函数
 │
-├── modules/                      # 业务模块目录（每个模块独立运行）
-│   ├── user/                     # 用户模块 (8080)
-│   │   ├── cmd/                  # 入口
-│   │   ├── config/               # 配置文件
-│   │   ├── internal/             # 业务代码
-│   │   │   ├── domain/           # 领域层
-│   │   │   ├── repo/             # 数据访问层
-│   │   │   └── service/          # 业务逻辑层
-│   │   ├── global/               # 模块全局变量
-│   │   ├── docs/                 # 模块设计文档
-│   │   └── README.md             # 模块说明
-│   ├── auth/ (8081)              # 权限模块
+├── modules/                     # 业务模块目录（每个模块独立运行）
+│   ├── user/ (8080)             # 用户模块
+│   │   ├── cmd/                 # 入口
+│   │   ├── config/              # 配置
+│   │   ├── sql/                 # 数据库脚本
+│   │   ├── internal/            # 业务代码
+│   │   │   ├── domain/          # 领域层
+│   │   │   ├── repo/            # 数据访问层
+│   │   │   └── service/         # 业务逻辑层
+│   │   ├── global/              # 模块全局变量
+│   │   ├── docs/                # 模块设计文档
+│   │   └── go.mod               # 模块依赖
+│   │
+│   ├── auth/ (8081)             # 权限模块
 │   ├── order/ (8082)            # 订单模块
 │   ├── payment/ (8083)          # 支付模块
 │   ├── product/ (8084)          # 商品模块
-│   ├── cache/ (8085)           # 缓存模块
+│   ├── cache/ (8085)            # 缓存模块
 │   ├── file/ (8086)             # 文件模块
 │   ├── mq/ (8087)              # 消息队列模块
 │   ├── search/ (8088)           # 搜索模块
@@ -88,12 +90,11 @@ code_scene/
 │   └── api-design/ (8090)       # API设计模块
 │
 ├── docs/                        # 项目通用设计文档
-│   ├── architecture.md           # 架构设计
+│   ├── architecture.md          # 架构设计
 │   ├── database.md              # 数据库设计
 │   └── api.md                   # 接口规范
 │
-├── sql/                         # 数据库初始化脚本
-├── go.work                      # Go工作区配置
+├── go.work                      # Go工作区配置（根目录）
 └── README.md                    # 项目总览
 ```
 
@@ -117,7 +118,7 @@ cd modules/user
 # 修改 config/config.yaml
 
 # 初始化数据库
-mysql -u root -p < ../../sql/init.sql
+mysql -u root -p < sql/init.sql
 
 # 运行
 go run cmd/main.go
