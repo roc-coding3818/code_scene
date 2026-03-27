@@ -1,0 +1,16 @@
+server:
+  port: 8086
+  mode: debug
+
+storage:
+  type: local  # local/oss/minio
+  local:
+    path: ./uploads
+  oss:
+    endpoint: ""
+    access_key: ""
+    secret_key: ""
+    bucket: ""
+
+cdn:
+  domain: ""

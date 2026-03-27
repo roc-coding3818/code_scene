@@ -1,0 +1,15 @@
+server:
+  port: 8087
+  mode: debug
+
+rabbitmq:
+  host: localhost
+  port: 5672
+  user: guest
+  password: guest
+  vhost: /
+
+kafka:
+  brokers:
+    - localhost:9092
+  topic: code_scene

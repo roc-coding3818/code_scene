@@ -1,0 +1,21 @@
+server:
+  port: 8089
+  mode: debug
+
+redis:
+  host: localhost
+  port: 6379
+  password: ""
+  db: 0
+
+registry:
+  type: etcd  # etcd/consul/nacos
+  etcd:
+    endpoints:
+      - localhost:2379
+
+config_center:
+  type: nacos
+  nacos:
+    server_addr: localhost:8848
+    namespace: ""

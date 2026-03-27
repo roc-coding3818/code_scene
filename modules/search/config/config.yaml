@@ -1,0 +1,9 @@
+server:
+  port: 8088
+  mode: debug
+
+elasticsearch:
+  host: localhost
+  port: 9200
+  username: ""
+  password: ""

@@ -1,0 +1,29 @@
+server:
+  port: 8083
+  mode: debug
+
+database:
+  host: localhost
+  port: 3306
+  user: root
+  password: root
+  dbname: code_scene_payment
+  charset: utf8mb4
+  max_idle_conns: 10
+  max_open_conns: 100
+
+redis:
+  host: localhost
+  port: 6379
+  password: ""
+  db: 0
+
+payment:
+  wechat:
+    app_id: ""
+    mch_id: ""
+    api_key: ""
+  alipay:
+    app_id: ""
+    private_key: ""
+    alipay_public_key: ""
