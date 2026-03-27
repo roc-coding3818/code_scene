@@ -4,8 +4,8 @@ import (
 	"strconv"
 
 	"github.com/gin-gonic/gin"
-	"github.com/roc-coding3818/code_scene/shared/jwt"
-	"github.com/roc-coding3818/code_scene/shared/response"
+	"code_scene/shared/jwt"
+	"code_scene/shared/response"
 )
 
 // JWT JWT认证中间件

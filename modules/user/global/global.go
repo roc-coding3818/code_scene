@@ -5,7 +5,7 @@ import (
 	"log"
 	"os"
 
-	"code_scene/modules/user/config"
+	"code_scene/shared/config"
 
 	"github.com/go-redis/redis/v8"
 	"gorm.io/driver/mysql"

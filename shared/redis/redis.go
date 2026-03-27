@@ -3,7 +3,7 @@ package redis
 import (
 	"context"
 
-	"github.com/roc-coding3818/code_scene/shared/config"
+	"code_scene/shared/config"
 	"github.com/go-redis/redis/v8"
 )
 

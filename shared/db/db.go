@@ -4,7 +4,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/roc-coding3818/code_scene/shared/config"
+	"code_scene/shared/config"
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
 	"gorm.io/gorm/logger"

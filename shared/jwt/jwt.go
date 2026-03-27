@@ -5,7 +5,7 @@ import (
 	"time"
 
 	"github.com/golang-jwt/jwt/v5"
-	"github.com/roc-coding3818/code_scene/shared/config"
+	"code_scene/shared/config"
 )
 
 var jwtCfg *config.JWTConfig

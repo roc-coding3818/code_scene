@@ -1,4 +1,4 @@
-module github.com/roc-coding3818/code_scene/shared
+module code_scene/shared
 
 go 1.21
 
